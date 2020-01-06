@@ -1,0 +1,23 @@
+
+ext {
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "28.0.3",
+            applicationId    : "longse.com.herospeed",
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "321456"
+    ]
+
+    dependencies = [
+            project             : [
+                    moduleBase      : ':moduleSystem:moduleBase',
+                    moduleCommon    : ':modulePublic:moduleCommon',
+                    moduleUser      : ':moduleCore:moduleUser'
+            ],
+            "support:appcompat-v7"  : 'com.android.support:appcompat-v7:27.0.2',
+            "support:design"        : 'com.android.support:design:27.0.2',
+            "junit:4.12"            : 'junit:junit:4.12'
+    ]
+}

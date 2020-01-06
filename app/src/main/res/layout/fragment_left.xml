@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/red1"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/login_ll"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <longse.com.herospeed.widget.CircleImageView
+                android:id="@+id/login_img"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/pikachu_sit" />
+
+            <TextView
+                android:id="@+id/login_statiu_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:text="no sign in"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/menu_friends"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:drawableLeft="@drawable/me"
+        android:drawablePadding="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/leftsn"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/menu_device"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/video"
+        android:drawablePadding="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/userdevice"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/menu_push"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/push"
+        android:drawablePadding="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/alarm"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/menu_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/cloud"
+        android:drawablePadding="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/cloud"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/c" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="Helps"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/menu_setting"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:drawableLeft="@drawable/setting"
+        android:drawablePadding="30dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/setting"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+</LinearLayout>

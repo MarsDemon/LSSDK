@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="longse.com.herospeed.activity.DeviceDetailActivity">
+    <longse.com.herospeed.widget.TitleView
+        android:id="@+id/device_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red1"
+        android:fitsSystemWindows="true"
+        app:title="设备详情"
+        app:titleColor="@color/white"
+        app:titleSize="20sp" />
+    <android.support.v4.widget.NestedScrollView
+        android:layout_below="@id/device_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/device_info"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           android:paddingBottom="50dp"
+            />
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

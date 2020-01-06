@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/red1">
+
+        <ImageView
+            android:id="@+id/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:src="@drawable/previous_icon" />
+
+        <EditText
+            android:id="@+id/search_content_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:imeOptions="actionSearch"
+            android:background="@color/transparent"
+            android:gravity="left|start|center_vertical"
+            android:hint="Search"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/c"
+            android:textCursorDrawable="@color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/search_del_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="10dp"
+            android:src="@drawable/delete_text"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_search_friends_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/me_choose" />
+
+        <TextView
+            android:id="@+id/pop_search_friends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/red1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pop_search_device_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/video_choose" />
+
+        <TextView
+            android:id="@+id/pop_search_device"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/red1" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBlank_5" />
+
+
+</LinearLayout>

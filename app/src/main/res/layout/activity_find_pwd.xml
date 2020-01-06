@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="longse.com.herospeed.activity.FindPwdActivity">
+
+    <longse.com.herospeed.widget.TitleView
+        android:id="@+id/forget_pwd_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red1"
+        android:fitsSystemWindows="true"
+        app:title="忘记密码"
+        app:titleColor="@color/white"
+        app:titleSize="20sp" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="56dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/forget_email_show"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/len_2"
+                android:text="验证码已发送至："
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+
+            <!--新密码-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/forget_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="新密码"
+                    android:inputType="textPassword"
+                    tools:ignore="HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--重复密码-->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/forget_again_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="重复新密码"
+                    android:inputType="textPassword"
+                    tools:ignore="HardcodedText" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--重复密码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/len_2"
+                android:layout_marginRight="@dimen/len_2"
+                android:layout_marginTop="@dimen/len_8">
+
+                <EditText
+                    android:id="@+id/forget_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:hint="请输入验证码"
+                    android:inputType="phone" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/forget_time"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/time_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/len_6"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/forget_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/red1"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="完成"
+                android:textColor="@android:color/white"
+                tools:ignore="HardcodedText" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v7.widget.LinearLayoutCompat>
